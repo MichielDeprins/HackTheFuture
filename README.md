@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# How to use: React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Installing dependencies: npm install
+- Starting development server: npm run dev (you can find the scripts in package.json)
 
-Currently, two official plugins are available:
+# What's already inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Types
 
-## Expanding the ESLint configuration
+This project uses typescript, types for the animal/drone data are already available in the types.ts file.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Constants
 
-- Configure the top-level `parserOptions` property like this:
+In constants.ts we already defined the api url for the available endpoints:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- ANIMAL_API_URL
+- DRONES_API_URL
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Packages
+
+- react-leaflet: package we are going to use to display the map and add markers documentation can be found here --> https://react-leaflet.js.org/
+- (optional) @tanstack/react-query: default data fetching library
