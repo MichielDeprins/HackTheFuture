@@ -12,7 +12,7 @@ $ npm install
 ### 2. Start the development server
 
 ```bash
-npm run dev
+$ npm run dev
 ```
 
 Your web app is now live at http://localhost:5173! 🎉
