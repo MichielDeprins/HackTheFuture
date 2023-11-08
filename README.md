@@ -36,7 +36,6 @@ Like mentioned before, feel free to start your own React project without TypeScr
 We recommend you to use the following packages, which is why we have installed them by default, but feel free to use other packages instead:
 
 - [`react-leaflet`](https://react-leaflet.js.org) for creating a map
-- (optional) [`@tanstack/react-query`](https://tanstack.com/query) for fetching data
 
 
 ## Tips
