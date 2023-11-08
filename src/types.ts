@@ -1,8 +1,8 @@
-export type AnimalElement = {
+export type Animal = {
   id: number;
   name: string;
   type: AnimalType;
-  gender: Gender;
+  gender: AnimalGender;
   weight: number;
   length: number;
   age: number;
@@ -11,7 +11,7 @@ export type AnimalElement = {
   image: string;
 };
 
-export type Gender = "MALE" | "FEMALE";
+export type AnimalGender = "MALE" | "FEMALE";
 
 export type AnimalType = "ELEPHANT" | "RHINO" | "GIRAFFE";
 
