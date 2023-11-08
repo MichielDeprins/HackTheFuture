@@ -37,7 +37,6 @@ We recommend you to use the following packages, which is why we have installed t
 
 - [`react-leaflet`](https://react-leaflet.js.org) for creating a map
 
-
 ## Tips
 
 - Use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) for retrieving data from the API
