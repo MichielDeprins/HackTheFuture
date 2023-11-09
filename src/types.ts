@@ -23,4 +23,5 @@ export type Drone = {
   longitude: number;
   latitude: number;
   image: string;
+  inRange?: boolean;
 };

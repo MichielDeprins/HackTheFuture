@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import { FetchAllDrones } from "./assets/DroneAPI.tsx";
+import { FetchDrones } from "./assets/DroneAPI.tsx";
 import FetchAllAnimals from "./AnimalAPI.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <FetchAllDrones />
+    <FetchDrones />
     <FetchAllAnimals />
   </React.StrictMode>
 );

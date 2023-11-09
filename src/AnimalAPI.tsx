@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Animal, AnimalType } from './types';
-import { API_URL } from './constants';
-
+import { useState, useEffect } from "react";
+import { Animal } from "./types";
+import { API_URL } from "./constants";
 function FetchAllAnimals() {
   const [animalList, setAnimals] = useState<Animal[]>([]);
 
   useEffect(() => {
-    async function fetchData(){
-        const response = await fetch(
-            'https://api.htf-2023.int.icapps-projects.com/animals'
-        );
-        const data: Animal[] = await response.json();
-        console.log(data);
-        setAnimals(data);
+    async function fetchData() {
+      const response = await fetch(
+        "https://api.htf-2023.int.icapps-projects.com/animals"
+      );
+      const data: Animal[] = await response.json();
+      console.log(data);
+      setAnimals(data);
     }
     fetchData();
-
   }, []);
 
   return (
@@ -23,9 +21,11 @@ function FetchAllAnimals() {
       <h1>All Animals</h1>
       <ul>
         {animalList.length > 0 ? (
-          animalList.map(animal => (
+          animalList.map((animal) => (
             <li key={animal.id}>
-              <h2>{animal.name}</h2>
+              <h2>
+                <a>{animal.name}</a>
+              </h2>
               <p>
                 <strong>Type:</strong> {animal.type}
               </p>
@@ -36,9 +36,8 @@ function FetchAllAnimals() {
                 <strong>gender:</strong> {animal.gender}
               </p>
               <p>
-              <img src={API_URL + '/' + animal.image} />
+                <img src={API_URL + "/" + animal.image} />
               </p>
-              
             </li>
           ))
         ) : (
@@ -48,6 +47,5 @@ function FetchAllAnimals() {
     </div>
   );
 }
-
 
 export default FetchAllAnimals;
