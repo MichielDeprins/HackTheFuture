@@ -40,3 +40,40 @@
 .read-the-docs {
   color: #888;
 }
+
+.animal-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .animal-item {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .animal-item h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .animal-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .animal-item p {
+    margin: 5px 0;
+  }
+  
+  /* Centering the loading text */
+  .animal-list p {
+    text-align: center;
+  }
+  
