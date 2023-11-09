@@ -4,10 +4,12 @@ import App from "./App.tsx";
 import "./index.css";
 import { FetchAllDrones } from "./assets/DroneAPI.tsx";
 import FetchAllAnimals from "./AnimalAPI.tsx";
+import MyMap from "./map.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <FetchAllDrones />
     <FetchAllAnimals />
+    {/* <FetchAllDrones />
+    <FetchAllAnimals /> */}
   </React.StrictMode>
 );
