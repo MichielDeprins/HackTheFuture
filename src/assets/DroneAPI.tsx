@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+// fetchDrones.tsx
+import React, { useEffect, useState } from "react";
 import { Animal, Drone } from "../types";
-import { API_URL, DRONES_API_URL } from "../constants";
+import { FetchDroneWithID } from "./Drone";
+import { API_URL } from "../constants";
+import { DRONES_API_URL } from "../constants";
 
 function FetchAllDrones() {
   const [allDronesList, setDroneList] = useState<Drone[]>([]);

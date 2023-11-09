@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
-import { Animal } from "./types";
+import React, { useState, useEffect } from "react";
+import { Animal, AnimalType } from "./types";
 import { API_URL } from "./constants";
+import MyMap from "./map";
+import "./animal.css";
+
 function FetchAllAnimals() {
   const [animalList, setAnimals] = useState<Animal[]>([]);
 
@@ -44,6 +47,9 @@ function FetchAllAnimals() {
           <p>Loading...</p>
         )}
       </ul>
+      <div>
+        <MyMap animals={animalList} />
+      </div>
     </div>
   );
 }
