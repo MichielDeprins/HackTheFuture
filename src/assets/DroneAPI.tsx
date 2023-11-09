@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Drone } from "../types";
 import { FetchDroneWithID } from "./Drone";
+import { API_URL } from '../constants';
 
 export function FetchAllDrones() {
   const [allDronesList, setDroneList] = useState<Drone[]>([]);
@@ -37,7 +38,7 @@ export function FetchAllDrones() {
                 }}
               >
                 <img
-                  src={drone.image}
+                  src={API_URL + '/' + drone.image}
                   alt={drone.name}
                   style={{ width: "100%" }}
                 />
